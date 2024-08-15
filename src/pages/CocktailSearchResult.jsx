@@ -50,10 +50,10 @@ export default function CocktailSearchResult() {
                       /* strMeasurement starts from 1 return if ingredient exist (not null) */
                     }
                     return ingredient ? (
-                      <li key={index}>
+                      <div key={index}>
                         {measurement ? `${measurement} ` : ""}
                         {ingredient}
-                      </li>
+                      </div>
                     ) : null;
                   })}
                   <button onClick={() => handleAdd(ct.strDrink, ct.strDrinkThumb, ct.idDrink)}>Add to Favourites</button>

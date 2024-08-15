@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { deleteCocktail } from "../airtable";
+import { deleteCocktail } from "../airtable"; 
 import { Link } from "react-router-dom";
 
 const headers = {
