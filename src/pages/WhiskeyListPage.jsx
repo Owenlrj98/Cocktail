@@ -45,7 +45,7 @@ export default function WhiskeyListPage() {
               <img
                 src={whiskey.strDrinkThumb}
                 alt={whiskey.strDrink}
-                width="100"
+                width="200"
               />
             </Link>
           </div>

@@ -42,7 +42,7 @@ export default function GinListPage() {
             </Link>
 
             <Link to={`/cocktails/${gin.idDrink}`}>
-              <img src={gin.strDrinkThumb} alt={gin.strDrink} width="100" />
+              <img src={gin.strDrinkThumb} alt={gin.strDrink} width="200" />
             </Link>
           </div>
         ))}

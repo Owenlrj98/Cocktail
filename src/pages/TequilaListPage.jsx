@@ -44,7 +44,7 @@ export default function TequilaListPage() {
               <img
                 src={tequila.strDrinkThumb}
                 alt={tequila.strDrink}
-                width="100"
+                width="200"
               />
             </Link>
           </div>

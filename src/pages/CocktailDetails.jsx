@@ -44,7 +44,7 @@ export default function CocktailDetails() {
   return (
     <div>
       <h1>{cocktail.strDrink}</h1>
-      <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} width="200"/>
+      <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} width="300"/>
       <p><strong className="text-warning">Category:</strong> {cocktail.strCategory}</p>
       <p><strong className="text-warning">Instructions:</strong> {cocktail.strInstructions}</p>
       <h3 className="text-warning">Ingredients:</h3>
@@ -52,7 +52,7 @@ export default function CocktailDetails() {
         {Object.keys(cocktail)
           .filter(key => key.startsWith('strIngredient') && cocktail[key])
           .map(key => (
-            <li key={key}>{cocktail[key]} {cocktail[`strMeasure${key.replace('strIngredient', '')}`]}</li>
+            <div key={key}>{cocktail[key]} {cocktail[`strMeasure${key.replace('strIngredient', '')}`]}</div>
           ))}
       </ul>
       <button onClick={() => handleAdd(cocktail.strDrink, cocktail.strDrinkThumb, cocktail.idDrink)}>

@@ -30,3 +30,6 @@ Existing libraries / css
 Identify Data to CUD
 
 Favourited drinks?
+
+# Issues with netlify
+https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking

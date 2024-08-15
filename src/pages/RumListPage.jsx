@@ -41,7 +41,7 @@ export default function RumListPage() {
               <div>{rum.strDrink}</div>
             </Link>
             <Link to={`/cocktails/${rum.idDrink}`}>
-              <img src={rum.strDrinkThumb} alt={rum.strDrink} width="100" />
+              <img src={rum.strDrinkThumb} alt={rum.strDrink} width="200" />
             </Link>
           </div>
         ))}

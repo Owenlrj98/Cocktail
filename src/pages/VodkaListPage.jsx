@@ -41,7 +41,7 @@ export default function VodkaListPage() {
               <div>{vodka.strDrink}</div>
             </Link>
             <Link to={`/cocktails/${vodka.idDrink}`}>
-              <img src={vodka.strDrinkThumb} alt={vodka.strDrink} width="100" />
+              <img src={vodka.strDrinkThumb} alt={vodka.strDrink} width="200" />
             </Link>
           </div>
         ))}
