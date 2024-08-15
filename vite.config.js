@@ -9,7 +9,8 @@ export default defineConfig({
     rollupOptions: {
       external: [
         'react-bootstrap/Container',
-        'react-bootstrap/Nav'
+        'react-bootstrap/Nav',
+        'react-bootstrap/Navbar'
       ]
     }
   }
