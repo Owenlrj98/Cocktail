@@ -1,8 +1,8 @@
-API Choice
+# API Choice
 
 TheCocktailDB https://www.thecocktaildb.com/api.php
 
-User Stories
+# User Stories
 
 This website serves as a cocktail encyclopedia for users.
 
@@ -11,7 +11,8 @@ At the homepage, a random cocktail will be featured everytime user visits the ho
 Users should be able to search for cocktails by name using the search bar, which will return a brief recipe on ingredients and measurement required.
 Under favourites, there should be a component where users can save cocktail recipes as favourite.
 Under browse, users will be able to see categories by main spirit type.
-Sample of API routes
+
+# Sample of API routes
 
 Search by cocktail name: www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita
 
@@ -19,7 +20,7 @@ Search by ingredient name: www.thecocktaildb.com/api/json/v1/1/search.php?i=vodk
 
 Suggest a random cocktail: www.thecocktaildb.com/api/json/v1/1/random.php
 
-Wireframes
+# Wireframes
 
 -Paired with react-router routes -Identify Components / state / fetch
 
@@ -29,7 +30,10 @@ Existing libraries / css
 
 Identify Data to CUD
 
-Favourited drinks?
+Favourited drinks
+
+# Initial User Interface
+![alt text](image.png)
 
 # Issues with netlify
 https://answers.netlify.com/t/support-guide-i-ve-deployed-my-site-but-i-still-see-page-not-found/125?utm_source=404page&utm_campaign=community_tracking
