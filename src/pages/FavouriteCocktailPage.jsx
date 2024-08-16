@@ -57,7 +57,9 @@ export default function FavouriteCocktailPage() {
                 <Link to={`/cocktails/${ct.idDrink}`} className="text-warning">
                   <h2>{ct.strDrink}</h2>
                 </Link>
-                <img src={ct.strDrinkThumb} alt={ct.strDrink} width="200" />
+                <Link to={`/cocktails/${ct.idDrink}`}>
+                  <img src={ct.strDrinkThumb} alt={ct.strDrink} width="200" />
+                </Link>
                 <button onClick={() => handleDelete(ct.id)}>Remove</button>
               </div>
             ))
