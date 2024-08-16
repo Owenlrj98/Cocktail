@@ -49,11 +49,11 @@ export default function CocktailDetails() {
       <p><strong className="text-warning">Instructions:</strong> {cocktail.strInstructions}</p>
       <h3 className="text-warning">Ingredients:</h3>
       <ul>
-        {Object.keys(cocktail)
-          .filter(key => key.startsWith('strIngredient') && cocktail[key])
-          .map(key => (
+        {Object.keys(cocktail) //retrieves all property names in the object
+          .filter(key => key.startsWith('strIngredient') && cocktail[key]) //filter all strIngredient123, make sure exist
+          .map(key => ( //cocktail[key] -> ingredient | maps over strIngredients and retrieve measurement corresponding to key
             <div key={key}>{cocktail[key]} {cocktail[`strMeasure${key.replace('strIngredient', '')}`]}</div>
-          ))}
+          ))} 
       </ul>
       <button onClick={() => handleAdd(cocktail.strDrink, cocktail.strDrinkThumb, cocktail.idDrink)}>
         Add to Favourites

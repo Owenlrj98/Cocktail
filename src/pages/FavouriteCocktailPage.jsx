@@ -1,11 +1,10 @@
 import { useState, useEffect } from "react";
-import { deleteCocktail } from "../airtable"; 
+import { deleteCocktail } from "../airtable";
 import { Link } from "react-router-dom";
 
 const headers = {
   "Content-Type": "application/json",
-  Authorization:
-    `Bearer ${import.meta.env.VITE_APIKEY}`,
+  Authorization: `Bearer ${import.meta.env.VITE_APIKEY}`,
 };
 
 async function getFavouriteData() {
@@ -59,9 +58,7 @@ export default function FavouriteCocktailPage() {
                   <h2>{ct.strDrink}</h2>
                 </Link>
                 <img src={ct.strDrinkThumb} alt={ct.strDrink} width="200" />
-                <button onClick={() => handleDelete(ct.id)}>
-                  Remove
-                </button>
+                <button onClick={() => handleDelete(ct.id)}>Remove</button>
               </div>
             ))
           )}

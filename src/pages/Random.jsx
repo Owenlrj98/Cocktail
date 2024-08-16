@@ -30,37 +30,36 @@ export default function Random() {
   return (
     <>
       <div>
-        <ul>
-            {randomCocktail.drinks.map((ct) => (
-              <div key={ct.idDrink}>
-                <h2 >{ct.strDrink}</h2>
-                <img src={ct.strDrinkThumb} alt={ct.strDrink} width="300" />
-                <p>
-                  <strong className="text-warning">Instructions:</strong> {ct.strInstructions}
-                </p>
-                <p>
-                  <strong className="text-warning">Ingredients:</strong>
-                </p>
-                  {/* create array with 15 values as there are 15 values */}
-                  {/* loop and transform each value into new array*/}
-                  {Array.from({ length: 15 }).map((_, index) => {
-                    const ingredient = ct[`strIngredient${index + 1}`];
-                    const measurement = ct[`strMeasure${index + 1}`];
-                    {
-                      /*index+1 as the strIngrededient and */
-                    }
-                    {
-                      /* strMeasurement starts from 1 return if ingredient exist (not null) */
-                    }
-                    return ingredient ? (
-                      <div key={index}>
-                        {measurement ? `${measurement} ` : ""}
-                        {ingredient}
-                      </div>
-                    ) : null;
-                  })}
-              </div>
-            ))}
+        <ul style={{ marginBottom: "0px" }}>
+          {randomCocktail.drinks.map((ct) => (
+            <div key={ct.idDrink}>
+              <h2>{ct.strDrink}</h2>
+              <img src={ct.strDrinkThumb} alt={ct.strDrink} width="300" />
+              <p>
+                <strong className="text-warning">Instructions:</strong>{" "}
+                {ct.strInstructions}
+              </p>
+              <p>
+                <strong className="text-warning">Ingredients:</strong>
+              </p>
+              {/* create array with 15 empty slots as there are 15 values */}
+              {/* loop and transform each value into new array*/}
+              {Array.from({ length: 15 }).map((_, index) => {
+                const ingredient = ct[`strIngredient${index + 1}`];
+                const measurement = ct[`strMeasure${index + 1}`];
+                {
+                  /*index+1 as the strIngrededient and
+                      strMeasurement starts from 1 return if ingredient exist (not null) */
+                }
+                return ingredient ? (
+                  <div key={index}>
+                    {measurement ? `${measurement} ` : ""}
+                    {ingredient}
+                  </div>
+                ) : null;
+              })}
+            </div>
+          ))}
         </ul>
       </div>
     </>
