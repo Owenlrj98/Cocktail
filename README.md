@@ -2,6 +2,9 @@
 
 TheCocktailDB https://www.thecocktaildb.com/api.php
 
+Intro
+
+Introducing a dynamic frontend React application that serves as an encyclopedia for cocktail recipes, designed to elevate your mixology skills and enhance your cocktail experience. This user-friendly platform allows enthusiasts and novices alike to explore a vast collection of cocktail recipes, complete with detailed ingredient lists and precise measurements.
 # User Stories
 
 This website serves as a cocktail encyclopedia for users.
